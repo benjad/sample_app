@@ -11,6 +11,9 @@
 
 body {
   padding-top: 60px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  color: #555555;
+
 }
 
 section {
@@ -36,10 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
+  font-size: 2em;
+  letter-spacing: 1px;
   margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
@@ -56,22 +60,27 @@ p {
   line-height: 1.7em;
 }
 
+/* nav-bar */
+.navbar-inverse {
+  background-color: #EFEDED;
+  border-color: #D7D7D7;
+}
+
+
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
+  color: #5CA0FA;
+  letter-spacing: 4px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+  &:hover {
+    color: #2F77D5;
+    text-decoration: none;
+  }
 }
 
 /* footer */
@@ -105,6 +114,7 @@ footer {
 /* sidebar */
 
 aside {
+  background-color: #79BEEF;
   section.user_info {
     margin-top: 20px;
   }
@@ -123,7 +133,7 @@ aside {
     h1 {
       font-size: 1.4em;
       text-align: left;
-      letter-spacing: -1px;
+      letter-spacing: 1px;
       margin-bottom: 3px;
       margin-top: 0px;
     }
@@ -178,6 +188,31 @@ aside {
 }
 
 
+/* button  */
+.btn-primary {
+  color: $gray-light;
+  background-color: #EAEAEA;
+  border-color: #FFD0D0;
+  &:hover {
+    background-color: #BBBBBB;
+    color: $gray-light;
+    border-color: #FFD0D0;
+  }
+}
+
+/* pagination  */
+.pagination > .active > a{
+  color: #fff;
+  background-color: #5CA0FA;
+  border-color: #428bca;
+  cursor: default;
+}
+
+/*jumbotron  */
+.jumbotron {
+   color: inherit;
+  background-color: #79BEEF;
+}
 /* forms */
 
 input, textarea, select, .uneditable-input {
