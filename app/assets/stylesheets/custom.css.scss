@@ -120,7 +120,7 @@ footer {
 /* sidebar */
 
 aside {
-  background-color: #79BEEF;
+  background-color: rgb(223, 241, 253);
   section.user_info {
     margin-top: 20px;
   }
@@ -159,6 +159,7 @@ aside {
   overflow: auto;
   margin-top: 0;
   padding: 0;
+  padding-bottom: 20px;
   a {
     float: left;
     padding: 0 10px;
