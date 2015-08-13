@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 /* mixins,variables,etc */
+$letter-color:#323232;
+$border-color:#eaeaea;
+
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -62,8 +65,11 @@ p {
 
 /* nav-bar */
 .navbar-inverse {
-  background-color: #EFEDED;
-  border-color: #D7D7D7;
+    background: -webkit-linear-gradient(rgba(180, 222, 251, 0.64), white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(180, 222, 251, 0.64), white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(180, 222, 251, 0.64), white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(180, 222, 251, 0.64), white); /* Standard syntax */
+  border-color: $border-color;
 }
 
 
@@ -73,7 +79,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #5CA0FA;
+  color: $letter-color;
   letter-spacing: 4px;
   padding-top: 9px;
   font-weight: bold;
@@ -90,7 +96,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $gray-light;
-	a {
+  	a {
 	  color: #555;
 	
 		&:hover {
@@ -192,12 +198,11 @@ aside {
 .btn-primary {
   color: $gray-light;
   background-color: #EAEAEA;
-  border-color: #FFD0D0;
+  border-color: $border-color;
   &:hover {
-    background-color: #BBBBBB;
+    background-color: $gray;
     color: $gray-light;
-    border-color: #FFD0D0;
-  }
+      }
 }
 
 /* pagination  */
@@ -210,8 +215,9 @@ aside {
 
 /*jumbotron  */
 .jumbotron {
+   background-color: #79BEEF;
    color: inherit;
-  background-color: #79BEEF;
+   margin-top: 30px;
 }
 /* forms */
 
